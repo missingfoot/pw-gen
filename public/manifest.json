@@ -4,9 +4,13 @@
   "description": "A secure password generator with customizable options",
   "start_url": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay"],
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "orientation": "portrait",
+  "edge_side_panel": {
+    "preferred_width": 0
+  },
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -19,6 +23,13 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Generate Password",
+      "url": "/",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
     }
   ]
 }
